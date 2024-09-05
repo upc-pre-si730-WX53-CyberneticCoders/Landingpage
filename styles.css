@@ -2,19 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #000000;
-    background-color: #F2EDD5;
+    color: #000;
+    background-color: #fff;
 }
 header {
-    background-color: #D9A60D;
+    background-color: #fff;
     padding: 10px;
     text-align: center;
-    border-bottom: 1px solid #FFB74D;
+    border-bottom: 1px solid #ff9933;
 }
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #FFFFFF;
+    color: #ff9933;
 }
 .container {
     width: 80%;
@@ -23,8 +23,8 @@ nav a {
 .hero {
     text-align: center;
     padding: 50px 0;
-    background-color: #5A87A0;
-    color: #FFFFFF;
+    background-color: #ff9933;
+    color: #000;
 }
 .hero h1 {
     font-size: 2.5em;
@@ -32,7 +32,7 @@ nav a {
 .carousel {
     padding: 30px 0;
     text-align: center;
-    background-color: #FFFFFF;
+    background-color: #fff;
 }
 .carousel-images {
     display: flex;
@@ -49,7 +49,7 @@ nav a {
 .carousel-images img:first-child {
     display: block;
 }
-.features, .contact {
+.features, .contact, .about, .motivational {
     padding: 50px 0;
     text-align: center;
 }
@@ -58,18 +58,38 @@ nav a {
 }
 .features div {
     padding: 20px;
-    background-color: #FFE0B2;
+    background-color: #fff;
     border-radius: 5px;
-    border: 1px solid #FFB74D;
+    border: 1px solid #ff9933;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .features h3 {
-    color: #D9A60D;
+    color: #ff9933;
 }
-.form-group {
+.about-content, .motivational-content {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ff9933;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.about-text, .motivational-text {
+    width: 50%;
+    text-align: left;
+}
+.about-image, .motivational-image {
+    width: 40%;
+}
+.about-image img, .motivational-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+.motivational-text p {
+    font-style: italic;
+    color: #ff9933;
 }
 form input, form textarea {
     width: 100%;
@@ -82,27 +102,27 @@ form input, form textarea {
 }
 form button {
     padding: 10px 20px;
-    background-color: #D9A60D;
-    color: #FFFFFF;
+    background-color: #ff9933;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 form button:hover {
-    background-color: #A37C02;
+    background-color: #e68a00;
 }
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: #590202;
+    background-color: #ff9933;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 .cta-button:hover {
-    background-color: #A0C4FF;
+    background-color: #e68a00;
 }
 .input-group {
     display: flex;
@@ -120,4 +140,12 @@ form button:hover {
     .hero h1 {
         font-size: 2em;
     }
+    .about-content, .motivational-content {
+        flex-direction: column;
+    }
+    .about-text, .motivational-text, .about-image, .motivational-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
+

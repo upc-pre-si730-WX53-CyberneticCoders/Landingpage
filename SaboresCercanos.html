@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Flavors</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container" role="banner">
+            <nav role="navigation">
+                <a href="#hero">Home</a>
+                <a href="#features">Features</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero" role="region" aria-label="Hero Section">
+            <div class="container">
+                <h1>Welcome to Home Flavors</h1>
+                <p>Connect with home cooks and enjoy healthy, personalized meals.</p>
+                <a href="#features" class="cta-button" aria-label="Learn more about our features">Learn More</a>
+            </div>
+        </section>
+
+        <section id="carousel" class="carousel" role="region" aria-label="Image Carousel">
+            <div class="container">
+                <div class="carousel-images">
+                    <img src="./Imagenes/Comida casera.png" alt="Homemade Meal 1">
+                    <img src="./Imagenes/comida casera2.jfif" alt="Homemade Meal 2">
+                    <img src="./Imagenes/comida casera3.jfif" alt="Homemade Meal 3">
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features" role="region" aria-label="Features Section">
+            <div class="container">
+                <h2>Our Features</h2>
+                <div>
+                    <h3>Personalized Meals</h3>
+                    <p>Select homemade menus based on your preferences.</p>
+                    <a href="#contact" class="cta-button" aria-label="Get personalized meals">Order Now</a>
+                </div>
+                <div>
+                    <h3>Local Cooks</h3>
+                    <p>Support home cooks and enjoy unique, authentic dishes.</p>
+                    <a href="#contact" class="cta-button" aria-label="Support local cooks">Join as a Cook</a>
+                </div>
+                <div>
+                    <h3>Culinary Community</h3>
+                    <p>Connect with persons who needs your dishes.</p>
+                    <a href="#contact" class="cta-button" aria-label="Join our culinary community">Join the Community</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact" role="region" aria-label="Contact Section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form role="form">
+                    <div class="input-group">
+                        <span class="material-icons" aria-hidden="true">person</span>
+                        <input type="text" placeholder="Name" aria-label="Name" required>
+                    </div>
+                    <div class="input-group">
+                        <span class="material-icons" aria-hidden="true">email</span>
+                        <input type="email" placeholder="Email" aria-label="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <span class="material-icons" aria-hidden="true">message</span>
+                        <textarea placeholder="Message" rows="4" aria-label="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button" aria-label="Send message">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.carousel-images img');
+        setInterval(() => {
+            images[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].style.display = 'block';
+        }, 3000); 
+    </script>
+</body>
+</html>

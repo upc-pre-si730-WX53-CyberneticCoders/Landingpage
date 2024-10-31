@@ -68,6 +68,8 @@ nav .brand-logo {
     font-size: 1.8rem;
     font-weight: 600;
 }
+
+
 /* Navigation logo */
 .nav-logo {
     height: 70px;  
@@ -75,6 +77,58 @@ nav .brand-logo {
     margin-right: 10px;  
     vertical-align: middle;  
 }
+
+/* About Us */
+
+.about-section {
+    background-image: url(Imagenes/fondoAu.avif); 
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: left; 
+}
+
+.section-title {
+    font-size: 2em; 
+    margin-bottom: 20px; 
+    color: #fff; 
+    background-size: cover; 
+    padding: 20px; 
+    border-radius: 50%; 
+    text-align: center;
+}
+
+.about-content {
+    display: flex; 
+    align-items: flex-start;
+    margin-top: 30px; 
+}
+
+.logo-container {
+    margin-right: 20px; 
+}
+
+.about-logo {
+    width: 70%; 
+    height: auto; 
+}
+
+.info-container {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    max-width: 800px; 
+    background-color: #fff9e6; 
+    border: 2px dashed #D9A60D; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align:justify;
+    width: 500px;
+    font-family: 'Georgia', serif; 
+    position: relative;
+}
+
+
 
 /*Contact*/
 .cont-section {

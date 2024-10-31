@@ -1,123 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Flavors</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="styles.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container" role="banner">
-            <nav role="navigation">
-                <a href="#hero">Home</a>
-                <a href="#features">Features</a>
-                <a href="#about">About Us</a>
-                <a href="#contact">Contact</a>
-            </nav>
+    <!-- Navigation Bar -->
+    <nav class="orange darken-2" aria-label="Main navigation">
+        <div class="nav-wrapper container">
+            <a href="#hero" class="brand-logo">Home Flavors</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#features">Features</a></li>                
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <main>
-        <section id="hero" class="hero" role="region" aria-label="Hero Section">
-            <div class="container">
-                <h1>Welcome to Home Flavors</h1>
-                <p>Connect with home cooks and enjoy healthy, personalized meals.</p>
-                <a href="#features" class="cta-button" aria-label="Learn more about our features">Learn More</a>
-            </div>
-        </section>
-
-        <section id="carousel" class="carousel" role="region" aria-label="Image Carousel">
-            <div class="container">
-                <div class="carousel-images">
-                    <img src="./Imagenes/Comida casera.png" alt="Homemade Meal 1">
-                    <img src="./Imagenes/comida casera2.jfif" alt="Homemade Meal 2">
-                    <img src="./Imagenes/comida casera3.jfif" alt="Homemade Meal 3">
+    <!-- Hero Section -->
+<section id="hero" class="hero-section">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6 hero-text">
+                <h1 class="hero-title">Home Flavors <span>For You</span></h1>
+                <div class="recipe-card">
+                    <p>Dare to enjoy this innovative way to order your food and/or sell your dishes. With Home Flavors, you’ll have access to a unique dining experience that is easy, fast, and available from the comfort of wherever you are. Whether you want to enjoy your favorite meal without leaving home or are ready to share your delicious creations with a broader audience, it’s all just a click away. Discover a world of flavors at your fingertips and make every meal a celebration!</p>
+                </div>
+                <a href="#contact" class="btn-large waves-effect waves-light orange" aria-label="Check our menu">
+                    Order Now
+                </a>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">
+                        <i class="material-icons">facebook</i>
+                    </a>
                 </div>
             </div>
-        </section>
-
-        
-
-        <section id="about" class="about" role="region" aria-label="About Us Section">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2>About Us</h2>
-                        <p>At Sabores Cercanos, we aim to connect local home cooks with people who seek fresh, healthy, and personalized meals. Our platform offers a diverse culinary experience tailored to individual tastes, bringing the essence of home-cooked meals to your table.</p>
-                    </div>
-                    <div class="about-image">
-                        <img src="./Imagenes/LogoSC.png" alt="About Us Image">
-                    </div>
-                </div>
+            <div class="col s12 m6">
+                <img src="./Imagenes/LogoSC (1).png" alt="LogoSC" class="responsive-img hero-image">
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <section id="features" class="features" role="region" aria-label="Features Section">
-            <div class="container">
-                <h2>Our Features</h2>
-                <div>
-                    <h3>Personalized Meals</h3>
-                    <p>Select homemade menus based on your preferences.</p>
-                    <a href="#contact" class="cta-button" aria-label="Get personalized meals">Order Now</a>
-                </div>
-                <div>
-                    <h3>Local Cooks</h3>
-                    <p>Support home cooks and enjoy unique, authentic dishes.</p>
-                    <a href="#contact" class="cta-button" aria-label="Support local cooks">Join as a Cook</a>
-                </div>
-                <div>
-                    <h3>Culinary Community</h3>
-                    <p>Connect with persons who need your dishes.</p>
-                    <a href="#contact" class="cta-button" aria-label="Join our culinary community">Join the Community</a>
-                </div>
-            </div>
-        </section>
 
-        <section id="contact" class="contact" role="region" aria-label="Contact Section">
-            <div class="container">
-                <h2>Contact Us</h2>
-                <form role="form">
-                    <div class="input-group">
-                        <span class="material-icons" aria-hidden="true">person</span>
-                        <input type="text" placeholder="Name" aria-label="Name" required>
+    <!-- Contact Section -->
+    <section id="contact" class="cont-section">
+        <div class="container contact-section" aria-label="Contact section">
+            <div class="form-container z-depth-3" aria-label="Contact form">
+                <h5 style="color:#D9A60D;">Contact Us</h5>
+                <form>
+                    <div class="input-field">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="name" type="text" class="validate" aria-required="true" required>
+                        <label for="name">Name</label>
                     </div>
-                    <div class="input-group">
-                        <span class="material-icons" aria-hidden="true">email</span>
-                        <input type="email" placeholder="Email" aria-label="Email" required>
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate" aria-required="true" required>
+                        <label for="email">Email</label>
                     </div>
-                    <div class="input-group">
-                        <span class="material-icons" aria-hidden="true">message</span>
-                        <textarea placeholder="Message" rows="4" aria-label="Message" required></textarea>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea" aria-required="true" required></textarea>
+                        <label for="message">Message</label>
                     </div>
-                    <button type="submit" class="cta-button" aria-label="Send message">Send Message</button>
+                    <button class="btn waves-effect waves-light orange darken-2" type="submit" name="action">
+                        Send
+                        <i class="material-icons right">send</i>
+                    </button>
                 </form>
             </div>
-        </section>
 
-        <section id="motivational" class="motivational" role="region" aria-label="Motivational Section">
-            <div class="container">
-                <div class="motivational-content">
-                    <div class="motivational-text">
-                        <p>"Sabores Cercanos brings more than just food, it brings the comfort of a home-cooked meal to your doorstep, fostering community and well-being."</p>
-                    </div>
-                    <div class="motivational-image">
-                        <img src="./Imagenes/Descargar.png" alt="Motivational Image">
-                    </div>
+            <div class="image-container">
+                <i class="material-icons contact-icon" aria-hidden="true">restaurant</i>
+                <h5>Find us at:</h5>
+                <img src="./Imagenes/Descargar.png" alt="Socialmedia" aria-label="Socialmedia">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="feat-section">
+        <div class="container">
+            <div class="receipt-wrapper center-align" aria-label="Features receipt">
+                <h4 class="features-title" aria-label="Features title">Features</h4>
+            </div>
+            <div class="feature-section" aria-label="Features section">
+                <!-- Card 1 -->
+                <div class="feature-card" aria-label="Feature 1">
+                    <i class="material-icons" aria-hidden="true">local_dining</i>
+                    <h5>Delicious Recipes</h5>
+                    <p>Explore our wide range of homemade recipes.</p>
+                    <button class="btn waves-effect waves-light cta-button" aria-label="Learn more about delicious recipes">
+                        Try Now!
+                        <i class="material-icons right">arrow_forward</i>
+                    </button>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="feature-card" aria-label="Feature 2">
+                    <i class="material-icons" aria-hidden="true">restaurant_menu</i>
+                    <h5>Homemade Menus</h5>
+                    <p>Access tasty menus created by home cooks that will delight your palate.</p>
+                    <button class="btn waves-effect waves-light cta-button" aria-label="Learn more about exclusive menus">
+                        Discover Them!
+                        <i class="material-icons right">arrow_forward</i>
+                    </button>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="feature-card" aria-label="Feature 3">
+                    <i class="material-icons" aria-hidden="true">kitchen</i>
+                    <h5>Home cooks</h5>
+                    <p>Take advantage of this opportunity to start a business in the culinary sector</p>
+                    <button class="btn waves-effect waves-light cta-button" aria-label="Learn more about kitchen tools">
+                        Start Now!
+                        <i class="material-icons right">arrow_forward</i>
+                    </button>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-        let currentIndex = 0;
-        const images = document.querySelectorAll('.carousel-images img');
-        setInterval(() => {
-            images[currentIndex].style.display = 'none';
-            currentIndex = (currentIndex + 1) % images.length;
-            images[currentIndex].style.display = 'block';
-        }, 3000); 
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
     </script>
 </body>
 </html>

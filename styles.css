@@ -81,7 +81,7 @@ nav .brand-logo {
 /* About Us */
 
 .about-section {
-    background-image: url(Imagenes/fondoAu.avif); 
+    background-image: url'./Imagenes/fondoAu.avif'); 
     background-size: cover;
     background-position: center;
     padding: 100px 0;

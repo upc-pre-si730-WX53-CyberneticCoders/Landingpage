@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -19,8 +19,9 @@
             <a href="#hero" class="brand-logo">Home Flavors</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#hero">Home</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#features">Features</a></li>                
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>                
             </ul>
         </div>
     </nav>
@@ -38,7 +39,7 @@
                     Order Now
                 </a>
                 <div class="social-icons">
-                    <a href="#" aria-label="Facebook">
+                    <a href="https://www.facebook.com/?locale=es_LA" aria-label="Facebook">
                         <i class="material-icons">facebook</i>
                     </a>
                 </div>
@@ -48,44 +49,26 @@
             </div>
         </div>
     </div>
-</section>
+</section>  
 
-
-    <!-- Contact Section -->
-    <section id="contact" class="cont-section">
-        <div class="container contact-section" aria-label="Contact section">
-            <div class="form-container z-depth-3" aria-label="Contact form">
-                <h5 style="color:#D9A60D;">Contact Us</h5>
-                <form>
-                    <div class="input-field">
-                        <i class="material-icons prefix">account_circle</i>
-                        <input id="name" type="text" class="validate" aria-required="true" required>
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="input-field">
-                        <i class="material-icons prefix">email</i>
-                        <input id="email" type="email" class="validate" aria-required="true" required>
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="input-field">
-                        <i class="material-icons prefix">message</i>
-                        <textarea id="message" class="materialize-textarea" aria-required="true" required></textarea>
-                        <label for="message">Message</label>
-                    </div>
-                    <button class="btn waves-effect waves-light orange darken-2" type="submit" name="action">
-                        Send
-                        <i class="material-icons right">send</i>
-                    </button>
-                </form>
+<!-- About Us Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="receipt-wrapper center-align" aria-label="Features receipt">
+            <h4 class="features-title" aria-label="Features title">About Us</h4>
+        </div>
+        <div class="about-content">
+            <div class="logo-container">
+                <img src="./Imagenes/LogoSC (1).png" alt="Logo" class="about-logo">
             </div>
-
-            <div class="image-container">
-                <i class="material-icons contact-icon" aria-hidden="true">restaurant</i>
-                <h5>Find us at:</h5>
-                <img src="./Imagenes/Descargar.png" alt="Socialmedia" aria-label="Socialmedia">
+                <div class="info-container">
+                <p>Welcome to Home Flavors! We are passionate about bringing unique culinary experiences to your doorstep. Our mission is to make dining enjoyable and accessible for everyone, whether you're looking to savor your favorite dishes or showcase your culinary creations.</p>
+                <p>Our team is dedicated to ensuring that every meal is a celebration of flavors, made with love and care. Join us on this delicious journey and discover a world of taste that will delight your senses!</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Features Section -->
     <section id="features" class="feat-section">
@@ -126,6 +109,42 @@
                         <i class="material-icons right">arrow_forward</i>
                     </button>
                 </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Contact Section -->
+     <section id="contact" class="cont-section">
+        <div class="container contact-section" aria-label="Contact section">
+            <div class="form-container z-depth-3" aria-label="Contact form">
+                <h5 style="color:#D9A60D;">Contact Us</h5>
+                <form>
+                    <div class="input-field">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="name" type="text" class="validate" aria-required="true" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate" aria-required="true" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea" aria-required="true" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button class="btn waves-effect waves-light orange darken-2" type="submit" name="action">
+                        Send
+                        <i class="material-icons right">send</i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="image-container">
+                <i class="material-icons contact-icon" aria-hidden="true">restaurant</i>
+                <h5>Find us at:</h5>
+                <img src="./Imagenes/Descargar.png" alt="Socialmedia" aria-label="Socialmedia">
             </div>
         </div>
     </section>
